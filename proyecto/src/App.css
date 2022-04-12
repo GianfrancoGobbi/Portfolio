@@ -20,11 +20,13 @@ h2 {
 
 h2 {
   font-Family: 'Times New Roman', Times, serif;
+  border-color: #000000;
+
   }
 
 
 .contenedorHello {
-  margin-top: 290px;
+  margin-top: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,18 +49,18 @@ h2 {
   z-index: -1;
   filter: blur(10px) opacity(0%);
   width: 20px;
-  transition: 500s ease;
+  transition: 50s ease;
   transform: rotateZ(0deg);
 
 }
 
 
 .contenedorHello:hover .imgcolor {
-  filter: blur(0px) opacity(100%);
+  filter: blur(2px) opacity(100%);
   transition: 1s ease;
   width: 400px;
   bottom: 170px;
-  transform: rotateZ(720deg);
+  transform: rotateZ(0deg);
 }
 
 
