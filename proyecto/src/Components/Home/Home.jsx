@@ -3,6 +3,8 @@ import './Home.css'
 import Nav from '../Nav/Nav.jsx';
 import Gian from '../Home/Gian.png'
 import FondoGiant from '../Home/imagenfondoperfil.jpg'
+import explote from '../Home/explote.jpg'
+import huella from '../Home/huella.png'
 
 export function Home() {
     return (
@@ -13,8 +15,8 @@ export function Home() {
                 <h2 className="h2">GIANFRANCO</h2>
                 <h3 className="h3">Graphic Designer</h3>
                 <h3 className="h4">Full stack developer</h3>
-                <img className="imgcolor" src={'https://media.istockphoto.com/photos/explosion-of-colored-powder-on-black-background-picture-id1192236158?k=20&m=1192236158&s=170667a&w=0&h=2LyexYGXdOqml_vBOOF4OicGuDp4K5ifut7xTjB9lJA='} ></img>
-
+                <img className="imgcolor" src={explote} alt="explote" />
+                <img className="imghuella" src={huella} alt="huella" />
             </div>
 
             <Nav />
