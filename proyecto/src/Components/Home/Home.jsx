@@ -6,6 +6,7 @@ import FondoGiant from '../Home/imagenfondoperfil.jpg'
 import explote from '../Home/explote.jpg'
 import huella from '../Home/huella.png'
 
+
 export function Home() {
     return (
         <div>
