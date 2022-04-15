@@ -21,16 +21,16 @@ export function Home() {
 
             <Nav />
             <div className="contenedor_imagenes">
-                <img src={Gian} className="imgGian"></img>
-                <img src={FondoGiant} className="imgFondo"></img>
+                <img src={Gian} className="imgGian" alt="Gian" />
+                <img src={FondoGiant} className="imgFondo" alt="Fondo" />
             </div>
 
             <h3 className="description">Mi nombre es Gianfranco, soy de Argentina.
                 Soy diseñador gráfico y Full Stack developer graduado
                 en Henry. Me adapto facilmente a los equipos de trabajo, autodidacta
                 y en busca de conocer mis límites.</h3>
-            <img className='imgprueba' src={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} ></img>
-            <img className='imgprueba' src={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} ></img>
+            <img className='imgprueba' src={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} alt='Explosion'></img>
+            <img className='imgprueba' src={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} alt='Explosion' ></img>
         </div>
     )
 }
