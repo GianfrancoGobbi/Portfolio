@@ -1,0 +1,171 @@
+.h1,
+.h2 {
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.h2 {
+    font-Family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border-color: #000000;
+    font-size: 31px;
+    margin-top: 35px;
+}
+
+.h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+.contenedorHello {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000000;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+
+
+
+
+.imgcolor {
+    position: absolute;
+    flex: none;
+    z-index: -1;
+    filter: blur(10px) opacity(0%);
+    width: 20px;
+    transition: 50s ease;
+    transform: rotateZ(0deg);
+    bottom: 0px;
+}
+
+
+.contenedorHello:hover .imgcolor {
+    filter: blur(2px) opacity(100%);
+    transition: 500ms ease;
+    width: 100%;
+
+
+}
+
+
+.h3 {
+    color: rgba(255, 255, 255, 0);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-shadow: 2px 2px 4px #00000000;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    bottom: 46px;
+    font-size: 25px;
+    transition: 5000s;
+}
+
+.h4 {
+    color: rgba(255, 255, 255, 0);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-shadow: 2px 2px 4px #00000000;
+    font-size: 22px;
+    position: relative;
+    bottom: 80px;
+    transition: 5000s ease;
+    margin-bottom: 355px;
+
+
+
+}
+
+.contenedorHello:hover .h3 {
+    bottom: -80px;
+    transition: 500ms;
+    color: white;
+
+}
+
+.contenedorHello:hover .h4 {
+    bottom: -80px;
+    transition: 500ms;
+    color: white;
+
+
+}
+
+
+
+.imgprueba {
+    width: 100%;
+    margin-bottom: 300px;
+}
+
+.description {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px #00000000;
+    font-size: 22px;
+    line-height : 35px;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 200px;
+    justify-content: center
+
+}
+
+.imgGian {
+  
+    width: 300px;
+}
+
+.imgFondo {
+    bottom: 350px;
+    position: relative;
+    z-index: -1;
+    width: 650 px;
+    animation-name: example;
+    animation-duration: 300s;
+    animation-iteration-count: infinite;
+    filter: blur(2px);
+    
+}
+
+@keyframes example {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.contenedor_imagenes {
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: -250px;
+}
+
+@media screen and (max-width: 400px) {
+    .imgcolor {
+
+        bottom: 290px;
+    }
+
+    .contenedor_imagenes{
+        width: 100%;
+    }
+
+}
