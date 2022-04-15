@@ -136,7 +136,7 @@
     animation-name: example;
     animation-duration: 300s;
     animation-iteration-count: infinite;
-    filter: blur(2px);
+    
     
 }
 
@@ -154,8 +154,8 @@
     flex-direction: column;
      align-items: center;
     justify-content: center;
-    margin-top: 0px;
-    margin-bottom: -250px;
+    margin-top: -10px;
+    margin-bottom: -340px;
 }
 
 @media screen and (max-width: 400px) {
@@ -167,5 +167,7 @@
     .contenedor_imagenes{
         width: 100%;
     }
+
+   
 
 }
