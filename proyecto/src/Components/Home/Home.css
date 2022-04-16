@@ -138,6 +138,7 @@
 
 .imghuella {
     display: none;
+    transition-duration: 3000s;
 }
 
 
@@ -159,6 +160,24 @@
     justify-content: center;
     margin-top: -10px;
     margin-bottom: -340px;
+}
+
+.lista_tecnologias {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:0;
+    color: white;
+}
+
+.tecnologias {
+color: white;
+list-style-type: none;
+width: 120px;
+font-size: 25px;
+margin:2px;
 }
 
 @media screen and (max-width: 400px) {

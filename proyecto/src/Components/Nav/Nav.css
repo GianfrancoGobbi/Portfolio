@@ -15,6 +15,8 @@
     align-items: center;
     color: aliceblue;
     margin-bottom: 100px;
+    position: -webkit-sticky;
+    align-self: stretch;
 }
 
 .nav_h2 {
