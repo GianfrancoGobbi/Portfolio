@@ -34,7 +34,7 @@ export function Home() {
                 <br />
                 Mis hobbies son los deportes, la comida y los videojuegos.
             </h3>
-       
+
             <img className='imgprueba' src={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} alt='Explosion'></img>
 
             <div>
