@@ -42,6 +42,7 @@ export function Home() {
                 <ul className='lista_tecnologias'>
                     <li className='tecnologias'>Javascrip</li>
                     <li className='tecnologias'>Html</li>
+                    <li className='tecnologias'>CSS</li>
                     <li className='tecnologias'>React</li>
                     <li className='tecnologias'>Redux</li>
                     <li className='tecnologias'>Illustrator</li>
@@ -51,10 +52,8 @@ export function Home() {
                     <li className='tecnologias'>After Effects</li>
                 </ul>
             </div>
-
-
-
             <img className='imgprueba' src={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} alt='Explosion' ></img>
+     
         </div>
     )
 }
