@@ -7,12 +7,15 @@ export function Nav() {
     return (
         <div className="nav">
             <Link to="/">
-            <div className="contenedor_titulo">
-                <h2 className="nav_h2">GIANFRANCO GOBBI</h2>
-                <div className="profesion">Graphic Designer & Full Stack Developer</div>
-            </div>
+                <div className="contenedor_titulo">
+                    <h2 className="nav_h2">GIANFRANCO GOBBI</h2>
+                    <div className="profesion">Graphic Designer & Full Stack Developer</div>
+                </div>
             </Link>
+
+            <Link to="/Portfolio">
             <div className="nav_portfolio">PORTFOLIO</div>
+            </Link>
 
             <Link to="/Mail">
                 <div className="nav_contacto">CONTACTO</div>

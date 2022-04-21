@@ -18,6 +18,8 @@
     position: -webkit-sticky;
     align-self: stretch;
     z-index: 100;
+    box-shadow: 0px 5px 10px 0px rgb(0, 0, 0);
+
 }
 
 .nav_h2 {
@@ -36,6 +38,7 @@
     -webkit-tap-highlight-color: transparent;
     color: white;
     box-shadow: none;
+   
 }
 
 .nav_portfolio {
@@ -50,11 +53,14 @@
     font-size: 12px;
     width: 120px;
     color: rgb(131, 131, 131);
-    text-decoration: none;
+    
     text-decoration-line: black;
     -webkit-tap-highlight-color: transparent;
     box-shadow: none;
+    text-decoration: none;
+    
  }
+
 
 
 
@@ -68,6 +74,9 @@
     display: flex;
     color: white;
 }
+
+
+
 
 @media screen and (max-width: 400px) {
     .nav {

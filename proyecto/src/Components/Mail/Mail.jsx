@@ -2,6 +2,13 @@ import emailjs from "emailjs-com";
 import React from 'react';
 import Nav from '../Nav/Nav.jsx';
 import './Mail.css';
+import Redes1 from '../Mail/redes-01.png';
+import Redes2 from '../Mail/redes-02.png';
+import Redes3 from '../Mail/redes-03.png';
+import Redes4 from '../Mail/redes-04.png';
+import FondoGiant from '../Home/imagenfondoperfil.jpg'
+import { Link } from 'react-router-dom';
+
 
 export function Mail() {
 
@@ -31,10 +38,45 @@ export function Mail() {
 
                     <textarea className="input_textarea" id="" cols="30" rows="8" placeholder="Escribe aquí tu propuesta" name="message"></textarea>
 
-                    <input type="submit" value="Enviar"></input>
+                    <input className="button" type="submit" value="ENVIAR"></input>
 
                 </div>
             </form>
+
+            <div className="contenedor_redes">
+
+
+                <div className="red">
+                    <a href="https://ar.linkedin.com/in/gianfranco-gobbi-53aa72112">
+                        <img src={FondoGiant} className="FondoGiant" alt="Fondo" />
+                        <img src={Redes1} alt="Redes" className="Redes" />
+                    </a>
+                </div>
+
+
+                <div className="red">
+                <a href="https://wa.me/5492613673544">
+                    <img src={FondoGiant} className="FondoGiant" alt="Fondo" />
+                    <img src={Redes2} alt="Redes" className="Redes" />
+                    </a>
+                </div>
+
+                <div className="red">
+                <a href="https://www.behance.net/giiangobbi">
+                    <img src={FondoGiant} className="FondoGiant" alt="Fondo" />
+                    <img src={Redes3} alt="Redes" className="Redes" />
+                    </a>
+                </div>
+
+                <div className="red">
+                <a href="https://www.instagram.com/giangobbi_/">
+                    <img src={FondoGiant} className="FondoGiant" alt="Fondo" />
+                    <img src={Redes4} alt="Redes" className="Redes" />
+                    </a>
+                </div>
+
+
+            </div>
 
         </div>
     )
