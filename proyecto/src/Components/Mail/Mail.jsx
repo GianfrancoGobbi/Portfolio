@@ -7,7 +7,7 @@ import Redes2 from '../Mail/redes-02.png';
 import Redes3 from '../Mail/redes-03.png';
 import Redes4 from '../Mail/redes-04.png';
 import FondoGiant from '../Home/imagenfondoperfil.jpg'
-import { Link } from 'react-router-dom';
+
 
 
 export function Mail() {
