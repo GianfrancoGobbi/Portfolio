@@ -9,7 +9,7 @@ import huella from '../Home/huella.png'
 
 export function Home() {
     return (
-        <div>
+        <div className="home">
             <div className="contenedorHello">
 
                 <h1 className="h1">Hola, soy</h1>

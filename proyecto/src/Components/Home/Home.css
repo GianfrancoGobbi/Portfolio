@@ -1,3 +1,5 @@
+
+
 .h1,
 .h2 {
     color: white;
@@ -36,7 +38,7 @@
     height: 810px;
     margin-left: 0;
     margin-right: 0;
-
+    overflow: hidden;
 
 }
 
@@ -63,7 +65,7 @@
     bottom: 370px;
     filter: blur(2px) opacity(100%);
     transition: 500ms ease;
-    width: 426px;
+    width: 400px;
     scroll-behavior: auto;
     overflow: hidden;
 
@@ -102,6 +104,7 @@
     color: white;
     transition-delay: 2s;
     text-shadow: 2px 2px 4px #000000;
+    overflow: hidden;
 }
 
 .contenedorHello:hover .h4 {
@@ -110,6 +113,7 @@
     color: white;
     transition-delay: 1s;
     text-shadow: 2px 2px 4px #000000;
+    overflow: hidden;
 }
 
 
@@ -120,7 +124,7 @@
 }
 
 .description {
-    width: 90%;
+    width: 400px;
     display: flex;
     position: relative;
     bottom: 90px;
@@ -129,12 +133,13 @@
     text-shadow: 2px 2px 4px #00000000;
     font-size: 22px;
     line-height: 35px;
-    text-align: center;
+    text-align: justify;
     justify-content: center;
     padding-left: 5px;
     padding-right: 5px;
     margin: auto;
     margin-bottom: 100px;
+    
 }
 
 .imgGian {
@@ -194,7 +199,7 @@
     color: white;
     padding: 5px;
     width: 50%;
-margin: auto;
+    margin: auto;
 }
 
 .tecnologias {
@@ -222,7 +227,7 @@ margin: auto;
 
     .lista_tecnologias {
         width: 100%;
-        margin: 0 ;
+        margin: 0;
     }
 
 
