@@ -1,6 +1,6 @@
 .nav {
     background-image: url(https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg);
-    width: 100%;
+    width: 100vw;
     height: 70px;
     margin-left: 0;
     margin-right: 0;
@@ -38,25 +38,33 @@
     -webkit-tap-highlight-color: transparent;
     color: white;
     box-shadow: none;
+    text-decoration: underline;
+   text-decoration-color: rgb(0, 0, 0);
    
 }
 
 .nav_portfolio {
     font-family: Helvetica, arial;
     font-size: 13px;
-    text-decoration: none;
+ 
     color: white;
     box-shadow: none;
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 0, 0);
+    
 }
 
 .profesion {
     font-size: 12px;
     width: 120px;
     color: rgb(131, 131, 131);
-    text-decoration-line: black;
-    -webkit-tap-highlight-color: transparent;
+  
+   
     box-shadow: none;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 0, 0);
+    
+   
  }
 
 
@@ -71,6 +79,9 @@
     flex-direction: column;
     display: flex;
     color: white;
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 0, 0);
+    
 }
 
 

@@ -1,5 +1,3 @@
-
-
 .h1,
 .h2 {
     color: white;
@@ -8,6 +6,16 @@
 }
 
 .h2 {
+    text-align: center;
+    font-Family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border-color: #000000;
+    font-size: 31px;
+    margin-top: 35px;
+}
+
+.h2t {
+    color: white;
+    text-align: center;
     font-Family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     border-color: #000000;
     font-size: 31px;
@@ -34,7 +42,7 @@
     align-items: center;
     justify-content: center;
     background-color: #00000000;
-    width: 100%;
+    width: 100vw;
     height: 810px;
     margin-left: 0;
     margin-right: 0;
@@ -84,6 +92,11 @@
     transition: 20s ease;
 }
 
+
+
+
+
+
 .h4 {
     color: rgba(255, 255, 255, 0);
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -103,9 +116,14 @@
     transition: 500ms;
     color: white;
     transition-delay: 2s;
-    text-shadow: 2px 2px 4px #000000;
-    overflow: hidden;
+    text-shadow: 2px 2px 4px #000000;    
+
+
 }
+
+
+
+
 
 .contenedorHello:hover .h4 {
     bottom: -170px;
@@ -133,13 +151,13 @@
     text-shadow: 2px 2px 4px #00000000;
     font-size: 22px;
     line-height: 35px;
-    text-align: justify;
+    text-align: center;
     justify-content: center;
     padding-left: 5px;
     padding-right: 5px;
     margin: auto;
     margin-bottom: 100px;
-    
+
 }
 
 .imgGian {
@@ -186,6 +204,7 @@
     margin-bottom: -340px;
     overflow: hidden;
     height: 800px;
+    width: 100vw;
 }
 
 .lista_tecnologias {
@@ -198,11 +217,12 @@
     margin: 0;
     color: white;
     padding: 5px;
-    width: 50%;
+    width: 50vw;
     margin: auto;
 }
 
 .tecnologias {
+    text-align: center;
     color: white;
     list-style-type: none;
     width: 120px;
@@ -212,24 +232,50 @@
 }
 
 @media screen and (max-width: 400px) {
+
+    .h1 {
+        position: relative;
+        bottom: 50px;
+    }
+
+    .h2 {
+        position: relative;
+        bottom: 50px;
+    }
+
+    .contenedorHello:hover .h1 {
+        top: 50px;
+
+    }
+
+    .contenedorHello:hover .h2 {
+        top: 50px;
+    }
+
+
     .imgcolor {
 
         bottom: 20px;
     }
 
     .contenedor_imagenes {
-        width: 100%;
+        width: 100vw;
     }
 
     .description {
-        width: 90%;
+
+        width: 90vw;
     }
 
     .lista_tecnologias {
         width: 100%;
         margin: 0;
+        padding: 5px;
     }
 
+    .tecnologias {
+        margin: 10px;
+    }
 
     .imghuella {
         position: absolute;

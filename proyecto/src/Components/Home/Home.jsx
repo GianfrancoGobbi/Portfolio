@@ -5,6 +5,7 @@ import Gian from '../Home/Gian.png'
 import FondoGiant from '../Home/imagenfondoperfil.jpg'
 import explote from '../Home/explote.jpg'
 import huella from '../Home/huella.png'
+import { Parallax } from 'react-parallax';
 
 
 export function Home() {
@@ -28,7 +29,7 @@ export function Home() {
 
             <h3 className="description">Mi nombre es Gianfranco Gobbi, nací en Argentina.
                 Soy diseñador gráfico senior y Full Stack developer junior graduado
-                en Henry. Actualmente me desarrollo en la sistematización de ventas en línea.
+                en Henry bootcamp. Actualmente me desarrollo en la sistematización de ventas en línea.
                 Me gusta el trabajo en equipo, autodidacta
                 y siempre en busca de nuevos desafios para enfrentar.
                 <br />
@@ -37,8 +38,12 @@ export function Home() {
 
             <img className='imgprueba' src={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} alt='Explosion'></img>
 
+            <Parallax blur={10} bgImage={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} bgImageAlt="the cat" strength={800}>
+                
+         
+
             <div>
-                <h2 className='h2'>Tecnologías incorporadas</h2>
+                <h2 className='h2t'>Tecnologías incorporadas</h2>
                 <ul className='lista_tecnologias'>
                     <li className='tecnologias'>Javascrip</li>
                     <li className='tecnologias'>Html</li>
@@ -52,8 +57,9 @@ export function Home() {
                     <li className='tecnologias'>After Effects</li>
                 </ul>
             </div>
+            </Parallax>
             <img className='imgprueba' src={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} alt='Explosion' ></img>
-     
+
         </div>
     )
 }

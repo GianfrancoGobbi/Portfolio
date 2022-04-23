@@ -31,7 +31,7 @@ export function Mail() {
 
     function mostrar() {
                 setEsconder("MAIL ENVIADO CON EXITO");
-                document.getElementById("button").style.color= "green";
+                document.getElementById("button").className = "buttonapretado"
     }
 
 

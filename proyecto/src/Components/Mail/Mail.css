@@ -34,13 +34,19 @@
 }
 
 .h2_Mail {
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 10px;
     font-size: 38px;
+    background: #000000;
     color: azure;
     text-align: center;
     font-family: Helvetica, sans-serif;
+
 }
+
+
+
+
 
 .contenedor_redes {
     display: flex;
@@ -49,7 +55,7 @@
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 130px;
 
 
 }
@@ -90,6 +96,25 @@
     box-shadow: inset 5px 5px 15px rgba(0, 255, 255, 0.141);
     border-color: black;
 }
+
+.buttonapretado {
+    content: "MAIL ENVIADO CON EXITO";
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(55, 255, 0, 0.607);
+    color: rgb(0, 0, 0);
+    box-shadow: inset 5px 5px 15px rgba(0, 255, 255, 0.141);
+    border-color: black;
+    transition-delay: 3s;
+    transition: 3s;
+}
+
+
+
+
+
 
 .button:hover {
     background-color: rgba(0, 255, 255, 0.023);
