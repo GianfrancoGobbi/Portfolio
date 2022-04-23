@@ -3,9 +3,97 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-
-  
+    height: 100vh;
     color: white;
- 
-}	
+    margin: 0;
+    padding: 0;
+    margin-bottom: -20px;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.FullStack {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    color: white;
+    height: 50%;
+    overflow: hidden;
+}
+
+.imgfullstack {
+    filter: blur(1px);
+    z-index: -50;
+}
+
+.imgfullstack2 {
+    filter: blur(1px);
+    z-index: -50;
+
+}
+
+
+.h2fullStack {
+    position: absolute;
+    z-index: 1;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    transition-duration: 0.5s;
+}
+
+.h2fullStack1 {
+    position: absolute;
+    z-index: 1;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    transition-duration: 0.5s;
+    
+}
+
+.Design {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    color: white;
+    height: 50%;
+    overflow: hidden;
+}
+
+.Design:hover .h2fullStack1{
+    font-size: 30px;
+        transition-duration: 0.5s;
+    transform: rotateY(360deg);
+}
+
+.Design:hover .imgfullstack2{
+    filter: blur(5px);
+    transition-duration: 0.5s;
+    z-index: -50;
+}
+
+.FullStack:hover .h2fullStack{
+    font-size: 30px;
+        transition-duration: 0.5s;
+    transform: rotateY(360deg);
+}
+
+.FullStack:hover .imgfullstack{
+    filter: blur(5px);
+    transition-duration: 0.5s;
+    z-index: -50;
+}
