@@ -20,6 +20,7 @@
     border-color: #000000;
     font-size: 31px;
     margin-top: 35px;
+
 }
 
 .h1 {
@@ -116,7 +117,7 @@
     transition: 500ms;
     color: white;
     transition-delay: 2s;
-    text-shadow: 2px 2px 4px #000000;    
+    text-shadow: 2px 2px 4px #000000;
 
 
 }
@@ -231,6 +232,65 @@
     margin-bottom: 15px;
 }
 
+
+
+.contenedorCV {
+   
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+}
+
+
+
+.imgCV {
+    width: 300px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    z-index: -1;
+}
+
+.imgCV:hover {
+    filter: blur(5px) saturate(0);
+    transition: 1s;
+    z-index: -100;
+}
+
+
+
+.AbrirPDF {
+    display: flex;
+    position: absolute;
+    color: rgba(255, 0, 0, 0);
+    font-size: 35px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-shadow: 2px 2px 4px #00000000;
+    text-align: center;
+    z-index: 1;
+    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: #00000000;
+   top: 180px;
+   margin-left: 45px;
+
+}
+
+
+.contenedorCV:hover .AbrirPDF {
+    color: rgb(255, 0, 0);
+    transition: 1s;
+    z-index: 100;
+    transition-delay: 1s;
+
+
+}
+
+
+
+
 @media screen and (max-width: 400px) {
 
     .h1 {
@@ -268,7 +328,7 @@
     }
 
     .lista_tecnologias {
-        width: 100%;
+        width: 100vw;
         margin: 0;
         padding: 5px;
     }
@@ -291,6 +351,16 @@
 
 
     }
+
+    .imgCV {
+
+        width: 90%;
+        border-radius: 15px;
+        filter: blur(0px);
+        margin-bottom: 50px;
+    }
+
+
 
     @keyframes pulso {
         0% {

@@ -1,4 +1,4 @@
-import React from 'react';
+import { React } from 'react';
 import './Home.css'
 import Nav from '../Nav/Nav.jsx';
 import Gian from '../Home/Gian.png'
@@ -6,9 +6,16 @@ import FondoGiant from '../Home/imagenfondoperfil.jpg'
 import explote from '../Home/explote.jpg'
 import huella from '../Home/huella.png'
 import { Parallax } from 'react-parallax';
+import Cv from '../Cv/CV.jpg'
+import { Link } from 'react-router-dom';
+
+
 
 
 export function Home() {
+
+
+
     return (
         <div className="home">
             <div className="contenedorHello">
@@ -36,11 +43,13 @@ export function Home() {
                 Mis hobbies son los deportes, la comida y los videojuegos.
             </h3>
 
-            <img className='imgprueba' src={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} alt='Explosion'></img>
+            {/* <img className='imgprueba' src={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} alt='Explosion'></img> */}
 
             <Parallax blur={10} bgImage={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} bgImageAlt="the cat" strength={800}>
-                
-         
+                <div className="separador">
+
+                </div>
+            </Parallax>
 
             <div>
                 <h2 className='h2t'>Tecnologías incorporadas</h2>
@@ -57,8 +66,32 @@ export function Home() {
                     <li className='tecnologias'>After Effects</li>
                 </ul>
             </div>
+
+
+
+
+
+            <Parallax blur={10} bgImage={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} bgImageAlt="the cat" strength={800}>
+
+                <h4 className='h2t'>CV</h4>
+
+                <div className='contenedorCV'>
+
+
+
+                    <Link to="/Cv" className="link">
+                        <h4 className='AbrirPDF' id='AbrirPDF'>Abrir en PDF</h4>
+                        <div className="contenedorimgCV">
+                            <img className='imgCV' src={Cv} alt='CV' id='imgCV' />
+                        </div>
+                    </Link>
+
+                </div>
+
             </Parallax>
-            <img className='imgprueba' src={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} alt='Explosion' ></img>
+
+
+            {/* <img className='imgprueba' src={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} alt='Explosion' ></img> */}
 
         </div>
     )
