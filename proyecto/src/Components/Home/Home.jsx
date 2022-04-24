@@ -8,13 +8,44 @@ import huella from '../Home/huella.png'
 import { Parallax } from 'react-parallax';
 import Cv from '../Cv/CV.jpg'
 import { Link } from 'react-router-dom';
-
+import { TagCloud } from 'react-tagcloud'
 
 
 
 export function Home() {
 
+    const data = [
+        { value: 'jQuery', count: 25 },
+        { value: 'Illustrator', count: 18 },
+        { value: 'JavaScript', count: 38 },
+        { value: 'REACT', count: 30 },
+        { value: 'Nodejs', count: 28 },
+        { value: 'Photoshop', count: 25 },
+        { value: 'HTML5', count: 33 },
+        { value: 'CSS', count: 20 },
+        { value: '3D max', count: 22 },
+        { value: 'APPsheet', count: 7 },
+        { value: 'Premiere', count: 25 },
+      ]
 
+      const customRenderer = (tag, size, color) => (
+        <span
+          key={tag.value}
+          style={{
+            animation: 'blinker 3s linear infinite',
+            animationDelay: `${Math.random() * 2}s`,
+            fontSize: `${size / 2}em`,
+            border: `2px solid ${color}`,
+            margin: '8px',
+            padding: '5px',
+            display: 'inline-block',
+            color: 'white',
+                 
+          }}
+        >
+          {tag.value}
+        </span>
+      )
 
     return (
         <div className="home">
@@ -51,29 +82,20 @@ export function Home() {
                 </div>
             </Parallax>
 
-            <div>
+            <div className="contenedortecnologias">
                 <h2 className='h2t'>Tecnologías incorporadas</h2>
                 <ul className='lista_tecnologias'>
-                    <li className='tecnologias'>Javascrip</li>
-                    <li className='tecnologias'>Html</li>
-                    <li className='tecnologias'>CSS</li>
-                    <li className='tecnologias'>React</li>
-                    <li className='tecnologias'>Redux</li>
-                    <li className='tecnologias'>Illustrator</li>
-                    <li className='tecnologias'>Photoshop</li>
-                    <li className='tecnologias'>3D MAX</li>
-                    <li className='tecnologias'>Premiere</li>
-                    <li className='tecnologias'>After Effects</li>
+                <TagCloud tags={data} minSize={1} maxSize={5} renderer={customRenderer} />
                 </ul>
             </div>
 
-
+          
 
 
 
             <Parallax blur={10} bgImage={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} bgImageAlt="the cat" strength={800}>
 
-                <h4 className='h2t'>CV</h4>
+                <h4 className='h2c'>CV</h4>
 
                 <div className='contenedorCV'>
 
@@ -81,9 +103,9 @@ export function Home() {
 
                     <Link to="/Cv" className="link">
                         <h4 className='AbrirPDF' id='AbrirPDF'>Abrir en PDF</h4>
-                        <div className="contenedorimgCV">
+                       
                             <img className='imgCV' src={Cv} alt='CV' id='imgCV' />
-                        </div>
+                      
                     </Link>
 
                 </div>

@@ -8,11 +8,6 @@ import Redes3 from '../Mail/redes-03.png';
 import Redes4 from '../Mail/redes-04.png';
 import FondoGiant from '../Home/imagenfondoperfil.jpg';
 
-
-
-
-
-
 export function Mail() {
 
     function sendEmail(e) {
@@ -30,8 +25,12 @@ export function Mail() {
     const [esconder, setEsconder] = useState("ENVIAR");
 
     function mostrar() {
-                setEsconder("MAIL ENVIADO CON EXITO");
-                document.getElementById("button").className = "buttonapretado"
+        setEsconder("MAIL ENVIADO CON EXITO");
+        document.getElementById("inputs").style.filter = "opacity(0)";
+        document.getElementById("inputs2").style.filter = "opacity(0)";
+        document.getElementById("inputs3").style.filter = "opacity(0)";
+        document.getElementById("h2_Mail").style.display = "none";
+        document.getElementById("button").className = "buttonapretado"
     }
 
 
@@ -41,56 +40,48 @@ export function Mail() {
 
             <form onSubmit={sendEmail}>
                 <div className="container" >
-                    <h2 className='h2_Mail'>Trabajemos juntos</h2>
+                    <h2 className='h2_Mail' id='h2_Mail'>Trabajemos juntos</h2>
 
-                    <input required className="inputs" type="text" placeholder="Nombre" name="name" />
+                    <input required className="inputs" id="inputs" type="text" placeholder="Nombre" name="name" />
 
-                    <input required className="inputs" type="email" placeholder="Email" name="email" />
+                    <input required className="inputs" id="inputs2" type="email" placeholder="Email" name="email" />
 
-                    <textarea required className="input_textarea" id="" cols="30" rows="8" placeholder="Escribe aquí tu propuesta" name="message"></textarea>
+                    <textarea required className="input_textarea" id="inputs3" type="text" cols="30" rows="8" placeholder="Escribe aquí tu propuesta" name="message"></textarea>
 
-                    <input  className="button" type="submit" id="button" value={esconder} onClick={mostrar}></input>
+                    <input className="button" type="submit" id="button" value={esconder} onClick={mostrar}></input>
 
-                   
+
 
                 </div>
             </form>
 
+            <h2 className='h2_Mail'>Conectemos</h2>
             <div className="contenedor_redes">
-
-
                 <div className="red">
                     <a href="https://ar.linkedin.com/in/gianfranco-gobbi-53aa72112">
                         <img src={FondoGiant} className="FondoGiant" alt="Fondo" />
                         <img src={Redes1} alt="Redes" className="Redes" />
                     </a>
                 </div>
-
-
                 <div className="red">
                     <a href="https://wa.me/5492613673544">
                         <img src={FondoGiant} className="FondoGiant" alt="Fondo" />
                         <img src={Redes2} alt="Redes" className="Redes" />
                     </a>
                 </div>
-
                 <div className="red">
                     <a href="https://www.behance.net/giiangobbi">
                         <img src={FondoGiant} className="FondoGiant" alt="Fondo" />
                         <img src={Redes3} alt="Redes" className="Redes" />
                     </a>
                 </div>
-
                 <div className="red">
                     <a href="https://www.instagram.com/giangobbi_/">
                         <img src={FondoGiant} className="FondoGiant" alt="Fondo" />
                         <img src={Redes4} alt="Redes" className="Redes" />
                     </a>
                 </div>
-
-
             </div>
-
         </div>
     )
 }
