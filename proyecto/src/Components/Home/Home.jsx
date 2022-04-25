@@ -32,15 +32,18 @@ export function Home() {
         <span
           key={tag.value}
           style={{
-            animation: 'blinker 3s linear infinite',
+            animation: 'blinker 6s linear infinite',
             animationDelay: `${Math.random() * 2}s`,
             fontSize: `${size / 2}em`,
-            border: `2px solid ${color}`,
+            border: `2px solid #00000000`,
             margin: '8px',
-            padding: '5px',
+            padding: '9px',
             display: 'inline-block',
             color: 'white',
-                 
+            borderRadius: '15px', 
+      boxShadow: `0px 0px 20px ${color}`,
+            fontFamily: 'Helvetica',
+        
           }}
         >
           {tag.value}
@@ -85,7 +88,7 @@ export function Home() {
             <div className="contenedortecnologias">
                 <h2 className='h2t'>Tecnologías incorporadas</h2>
                 <ul className='lista_tecnologias'>
-                <TagCloud tags={data} minSize={1} maxSize={5} renderer={customRenderer} />
+                <TagCloud className='tagcloud' tags={data} minSize={1} maxSize={5} renderer={customRenderer} />
                 </ul>
             </div>
 

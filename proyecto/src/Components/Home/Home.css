@@ -11,17 +11,21 @@
     border-color: #000000;
     font-size: 31px;
     margin-top: 35px;
+
 }
 
 .h2t {
+    position: relative;
+    top: 30px;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
 
     color: white;
     text-align: center;
     font-Family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     border-color: #000000;
-    font-size: 31px;
-
-
+    font-size: 30px;
 }
 
 .h2c {
@@ -115,14 +119,25 @@
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-shadow: 2px 2px 4px #00000000;
     font-size: 22px;
+    /* width: 16ch; */
     position: relative;
     bottom: 46px;
     transition: 20s ease;
-
-
-
-
+    /* animation: example 2s step(12),
+    blink .5s infinite step-end alternate;
+    overflow: hidden; */
 }
+
+/* @keyframes example {
+   from { width:0
+    }
+}
+
+@keyframes blink { 
+    50% {border-color:transparent}
+} */
+
+
 
 .contenedorHello:hover .h3 {
     bottom: -170px;
@@ -198,15 +213,7 @@
 
 
 
-@keyframes example {
-    0% {
-        transform: rotate(0deg);
-    }
 
-    100% {
-        transform: rotate(360deg);
-    }
-}
 
 .contenedor_imagenes {
     display: flex;
@@ -230,26 +237,33 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    margin: auto;
 
 
 }
 
 
 .lista_tecnologias {
-    width: 50vw;
     display: flex;
-
+    width: 50%;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-
     color: white;
-    
+    padding: 0;
     margin: auto;
     overflow: hidden;
 }
 
-
+.tagcloud {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0 10px 0;
+}
 
 .contenedorCV {
     position: relative;
@@ -366,14 +380,14 @@
         width: 90vw;
     }
 
-  .lista_tecnologias{
-      width: 100%;
-  }
+    .lista_tecnologias {
+        width: 95%;
+    }
 
-    .contenedortecnologias{
+    .contenedortecnologias {
         width: 100vw;
-        padding: 0px;
-height: 100vh;
+
+        height: 90vh;
     }
 
 
@@ -393,7 +407,10 @@ height: 100vh;
 
     }
 
-
+    .contenedorCV {
+        height: 75vh;
+        margin: 0;
+    }
 
     .imgCV {
 
@@ -401,6 +418,7 @@ height: 100vh;
         border-radius: 15px;
         filter: blur(0px);
         margin-left: 5%;
+        margin-bottom: 50px;
     }
 
 
