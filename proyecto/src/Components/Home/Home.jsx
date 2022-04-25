@@ -9,30 +9,30 @@ import { Parallax } from 'react-parallax';
 import Cv from '../Cv/CV.jpg'
 import { Link } from 'react-router-dom';
 import { TagCloud } from 'react-tagcloud'
-
+import explote1 from '../Home/explote1.jpg'
 
 
 export function Home() {
 
     const data = [
-        { value: 'jQuery', count: 25 },
+        { value: 'jQuery', count: 15 },
         { value: 'Illustrator', count: 18 },
         { value: 'JavaScript', count: 38 },
-        { value: 'REACT', count: 30 },
-        { value: 'Nodejs', count: 28 },
+        { value: 'REACT', count: 38 },
+        { value: 'Nodejs', count: 16 },
         { value: 'Photoshop', count: 25 },
         { value: 'HTML5', count: 33 },
-        { value: 'CSS', count: 20 },
+        { value: 'CSS', count: 38 },
         { value: '3D max', count: 22 },
         { value: 'APPsheet', count: 7 },
-        { value: 'Premiere', count: 25 },
+        { value: 'Premiere', count: 13 },
       ]
 
       const customRenderer = (tag, size, color) => (
         <span
           key={tag.value}
           style={{
-            animation: 'blinker 6s linear infinite',
+            animation: 'blinker 4s linear infinite',
             animationDelay: `${Math.random() * 2}s`,
             fontSize: `${size / 2}em`,
             border: `2px solid #00000000`,
@@ -41,7 +41,7 @@ export function Home() {
             display: 'inline-block',
             color: 'white',
             borderRadius: '15px', 
-      boxShadow: `0px 0px 20px ${color}`,
+      boxShadow: `-5px 0px 20px ${color}`,
             fontFamily: 'Helvetica',
         
           }}
@@ -79,7 +79,7 @@ export function Home() {
 
             {/* <img className='imgprueba' src={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} alt='Explosion'></img> */}
 
-            <Parallax blur={10} bgImage={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} bgImageAlt="the cat" strength={800}>
+            <Parallax blur={10} bgImage={explote1} bgImageAlt="the cat" strength={1000}>
                 <div className="separador">
 
                 </div>
@@ -96,7 +96,7 @@ export function Home() {
 
 
 
-            <Parallax blur={10} bgImage={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} bgImageAlt="the cat" strength={800}>
+            <Parallax blur={10} bgImage={explote1} bgImageAlt="the cat" strength={1000}>
 
                 <h4 className='h2c'>CV</h4>
 

@@ -201,9 +201,20 @@
     animation-name: example;
     animation-duration: 300s;
     animation-iteration-count: infinite;
-
-
 }
+
+
+@keyframes example {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
 
 .imghuella {
     display: none;
