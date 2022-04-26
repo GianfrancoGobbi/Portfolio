@@ -5,6 +5,8 @@ import Mail from './Components/Mail/Mail';
 import Portfolio from './Components/Portfolio/Portfolio';
 import Cv from  './Components/Cv/Cv';
 import Design from './Components/Portfolio/Design/Design'
+import Fullstack from './Components/Portfolio/Fullstack/Fullstack';
+
 
 function App() {
   return (
@@ -15,7 +17,7 @@ function App() {
             <Route path="/Portfolio" component={Portfolio} />
             <Route path="/CV" component={Cv} />
             <Route path="/Design" component={Design} />
-
+            <Route path="/Fullstack" component={Fullstack} />
     </div>
   );
 }

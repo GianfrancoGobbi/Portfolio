@@ -48,16 +48,16 @@ export function Design(){
 
 <Slider {...settings}>
           <div>
-            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2e15a988373207.5dd457616d9f8.jpg" />
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2e15a988373207.5dd457616d9f8.jpg" alt='img'/>
           </div>
           <div>
-            <img src="http://placekitten.com/g/400/200" />
+            <img src="http://placekitten.com/g/400/200" alt='img'/>
           </div>
           <div>
-            <img src="http://placekitten.com/g/400/200" />
+            <img src="http://placekitten.com/g/400/200" alt='img'/>
           </div>
           <div>
-            <img src="http://placekitten.com/g/400/200" />
+            <img src="http://placekitten.com/g/400/200" alt='img'/>
           </div>
         </Slider>
   

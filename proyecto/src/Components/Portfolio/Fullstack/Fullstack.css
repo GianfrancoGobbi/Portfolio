@@ -1,0 +1,31 @@
+.fullstack_fullstack{
+    position: relative;
+    width: 100vw;
+    margin:auto 0;
+    padding: 0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center; 
+    align-items:center;
+}
+
+.description1{
+
+    width: 400px;
+    display: flex;
+    position: relative;
+
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px #00000000;
+    font-size: 22px;
+    line-height: 35px;
+    text-align: center;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: auto;
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+

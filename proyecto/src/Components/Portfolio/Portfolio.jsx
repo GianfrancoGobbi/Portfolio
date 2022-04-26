@@ -2,6 +2,8 @@ import React from 'react';
 import './Portfolio.css';
 import Nav from '../Nav/Nav.jsx';
 import num from '../Portfolio/num.jpg';
+import { Link } from 'react-router-dom';
+
 
 export function Portfolio() {
     return (
@@ -9,14 +11,22 @@ export function Portfolio() {
             <Nav />
             <div className='portfolio'>
 
+
                 <div className="FullStack">
-                    <h2 className='h2fullStack'>FullStack</h2>
-                    <img className='imgfullstack' src={num} alt='Explosion'></img>
+                <h2 className='h2fullStack'>FullStack</h2>
+                    <Link to={'/Fullstack'}>
+                       
+                        <img className='imgfullstack' src={num} alt='Explosion'></img>
+                    </Link>
                 </div>
+
 
                 <div className="Design">
                 <h2 className='h2fullStack1'>Design</h2>
-                    <img className='imgfullstack2' src={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} alt='Explosion'></img>
+                    <Link to={'/Design'}>
+                       
+                        <img className='imgfullstack2' src={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} alt='Explosion'></img>
+                    </Link>
                 </div>
 
 
