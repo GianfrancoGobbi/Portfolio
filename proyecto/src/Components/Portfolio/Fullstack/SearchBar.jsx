@@ -14,7 +14,7 @@ export default function SearchBar({onSearch}) {
         placeholder="Agrega tu ciudad favorita"
         onChange={e => setCity(e.target.value)}
       />
-      <input className="button" type="submit" value="Agregar" />
+      <input id="botonagregar" className="button" type="submit" value="Agregar" />
     </form>
   );
 }

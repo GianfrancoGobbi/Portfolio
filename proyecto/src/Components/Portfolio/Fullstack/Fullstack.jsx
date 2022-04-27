@@ -55,28 +55,43 @@ export function Fullstack() {
         document.getElementById("card-body").className = "card-bodyml";
         document.getElementById("row").className = "rowml";
         document.getElementById("col-sm-4").className = "col-sm-4ml";
+        document.getElementById("col-sm-41").className = "col-sm-4ml";
         document.getElementById("p1").className = "p1ml";
-              document.getElementById("botoncerrar").className = "botoncerrarml";
+        document.getElementById("p2").className = "pml";
+        document.getElementById("p3").className = "p1ml";
+        document.getElementById("botoncerrar").className = "botoncerrarml";
+        document.getElementById("img").className = "imgml";
+        document.getElementById("fullstack_fullstack").className = "fullstack_fullstackml";
+        document.getElementById("description1").className = "description1ml";
+      
+        document.getElementById("nav").className ="navml"
+        document.getElementById("nav_h2").className ="nav_h2ml"
+        document.getElementById("nav_contacto").className ="nav_contactoml"
+        document.getElementById("nav_portfolio").className ="nav_portfolioml"
+        document.getElementById("profesion").className ="profesionml"
+        document.getElementById("contenedor_titulo").className ="contenedor_tituloml"
+        document.getElementById("botonagregar").className ="botonagregarml"
     }
 
     return (
 
-        <div className="fullstack_fullstack">
+        <div id="fullstack_fullstack" className="fullstack_fullstack">
 
 
             <Nav />
-            <h3 className="description1">Juguemos un poco!!!
+            <h3 id="description1" className="description1">Juguemos un poco!!!
                 <br></br>
                 Para mostrarte mis habilidades,
-                agrega tus ciudades favoritas y luego cambiaremos el estilo de las tarjetas.
+                <br></br>
+                agrega tu ciudad favorita <br></br> y luego cambiaremos el estilo de la tarjeta.
 
             </h3>
             <Search onSearch={onSearch} />
             <div className="estilostarjetas">
-                <button id='ml' className="estilos" onClick={configurarMl}>ML</button>
-                <button id='spotify' className="estilos">spotify</button>
+                <button id='boton_estilo_ml' className="boton_estilo_ml" onClick={configurarMl}>Mercado Libre</button>
+                {/* <button id='spotify' className="estilos">spotify</button>
                 <button id='facebook' className="estilos">facebook</button>
-                <button id='youtube' className="estilos">youtube</button>
+                <button id='youtube' className="estilos">youtube</button> */}
             </div>
             <Cards cities={cities} onClose={onClose} />
 

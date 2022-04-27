@@ -10,11 +10,10 @@
 }
 
 .description1{
+    width: 95%;
 
-    width: 400px;
     display: flex;
     position: relative;
-
     color: white;
     font-family: 'Times New Roman', Times, serif;
     text-shadow: 2px 2px 4px #00000000;
@@ -22,8 +21,7 @@
     line-height: 35px;
     text-align: center;
     justify-content: center;
-    padding-left: 5px;
-    padding-right: 5px;
+
     margin: auto;
     margin-bottom: 0px;
     margin-top: 40px;
@@ -31,4 +29,9 @@
 
 .estilos{
     color: white;
+}
+
+.boton_estilo_ml{
+    background-color: #FFF159;
+    border-radius: 8px;
 }
