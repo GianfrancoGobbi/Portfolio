@@ -1,0 +1,97 @@
+
+/* MERCADOLIBRE */
+
+.cardml {
+  position: relative;
+  background-color: rgb(59, 59, 59);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 200px;
+  margin: 10px;
+  margin-top: 40px;
+  border-radius: 15px;
+    border-color: rgb(0, 0, 0);
+  border: 2px solid #ffffff;
+  box-shadow: 5px 5px 15px #00000018;
+  overflow: hidden;
+}
+
+.col-sm-4ml {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: rgb(0, 0, 0);
+}
+
+.card-bodyml {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1cardml {
+  margin: 15px;
+  margin-top: 20px;
+  font-family: Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 55px;
+}
+
+.botoncerrarml {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(100, 0, 0, 0);
+  color: rgb(225, 255, 0);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  opacity: calc(70);
+  transition: 1s;
+  border: 0px;
+}
+
+.botoncerrarml:hover {
+  background-color: rgba(255, 0, 0, 0.315);
+  opacity: calc(70);
+  transition: ease 1s;
+  border-radius: 12px;
+  border-color: rgba(240, 248, 255, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.infoml {
+  color: rgb(0, 0, 0);
+  margin-top: 0px;
+}
+
+.pml {
+  color: rgb(0, 0, 0);
+  margin-right: 20px;
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+}
+
+
+.p1ml {
+  color: aqua;
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+}
+
+.imgml {
+  position: relative;
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.438));
+  filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.541));
+  animation-duration: 3s;
+  animation-direction: alternate-reverse;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+
+

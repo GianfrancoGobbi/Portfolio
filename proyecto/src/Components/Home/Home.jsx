@@ -26,29 +26,29 @@ export function Home() {
         { value: '3D max', count: 22 },
         { value: 'APPsheet', count: 7 },
         { value: 'Premiere', count: 13 },
-      ]
+    ]
 
-      const customRenderer = (tag, size, color) => (
+    const customRenderer = (tag, size, color) => (
         <span
-          key={tag.value}
-          style={{
-            animation: 'blinker 4s linear infinite',
-            animationDelay: `${Math.random() * 2}s`,
-            fontSize: `${size / 2}em`,
-            border: `2px solid #00000000`,
-            margin: '8px',
-            padding: '9px',
-            display: 'inline-block',
-            color: 'white',
-            borderRadius: '15px', 
-      boxShadow: `-5px 0px 20px ${color}`,
-            fontFamily: 'Helvetica',
-        
-          }}
+            key={tag.value}
+            style={{
+                animation: 'blinker 4s linear infinite',
+                animationDelay: `${Math.random() * 2}s`,
+                fontSize: `${size / 2}em`,
+                border: `2px solid #00000000`,
+                margin: '8px',
+                padding: '9px',
+                display: 'inline-block',
+                color: 'white',
+                borderRadius: '15px',
+                boxShadow: `-5px 0px 20px ${color}`,
+                fontFamily: 'Helvetica',
+
+            }}
         >
-          {tag.value}
+            {tag.value}
         </span>
-      )
+    )
 
     return (
         <div className="home">
@@ -88,11 +88,11 @@ export function Home() {
             <div className="contenedortecnologias">
                 <h2 className='h2t'>Tecnologías incorporadas</h2>
                 <ul className='lista_tecnologias'>
-                <TagCloud className='tagcloud' tags={data} minSize={1} maxSize={5} renderer={customRenderer} />
+                    <TagCloud className='tagcloud' tags={data} minSize={1} maxSize={5} renderer={customRenderer} />
                 </ul>
             </div>
 
-          
+
 
 
 
@@ -106,9 +106,9 @@ export function Home() {
 
                     <Link to="/Cv" className="link">
                         <h4 className='AbrirPDF' id='AbrirPDF'>Abrir en PDF</h4>
-                       
-                            <img className='imgCV' src={Cv} alt='CV' id='imgCV' />
-                      
+
+                        <img className='imgCV' src={Cv} alt='CV' id='imgCV' />
+
                     </Link>
 
                 </div>

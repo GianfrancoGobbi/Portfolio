@@ -1,24 +1,24 @@
 import React from 'react';
-import './Card.css';
+import "./Card.css";
 
 export default function Card({ min, max, name, img, onClose, id }) {
   return (
-    <div className="card">
-      <div id="closeIcon" className="row">
-        <button onClick={onClose} className="botoncerrar">X</button>
+    <div id='card' className="card">
+      <div id="row" className="row">
+        <button onClick={onClose} id="botoncerrar" className="botoncerrar">X</button>
       </div>
-      <div className="card-body">
-        <h5 className="h1card">{name}</h5>
+      <div id="card-body" className="card-body">
+        <h5 id="h1card" className="h1card">{name}</h5>
         <div className="row">
-          <div className="col-sm-4 col-md-4 col-lg-4">
-            <p className="p">Min </p>
+          <div id="col-sm-4" className="col-sm-4 col-md-4 col-lg-4">
+            <p id="p" className="p">Min </p>
             <p className="p1"> {min}°</p>
           </div>
-          <div className="col-sm-4 col-md-4 col-lg-4">
-            <p className="p">Max</p>
-            <p className="p1">{max}°</p>
+          <div id="col-sm-4" className="col-sm-4 col-md-4 col-lg-4">
+            <p id="p2" className="p">Max</p>
+            <p id="p1" className="p1">{max}°</p>
           </div>
-          <div className="col-sm-4 col-md-4 col-lg-4">
+          <div  id="col-sm-4" className="col-sm-4 col-md-4 col-lg-4">
             <img className="img" src={"http://openweathermap.org/img/wn/" + img + "@2x.png"} width="80" height="80" alt="img" />
           </div>
         </div>
