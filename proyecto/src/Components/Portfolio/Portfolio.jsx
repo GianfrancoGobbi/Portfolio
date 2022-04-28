@@ -23,10 +23,11 @@ export function Portfolio() {
 
                 <div className="Design">
                 <h2 className='h2fullStack1'>Design</h2>
-                    <Link to={'/Design'}>
-                       
+                    {/* <Link to={'https://www.behance.net/giiangobbi'}> */}
+                    <a href="https://www.behance.net/giiangobbi">
                         <img className='imgfullstack2' src={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} alt='Explosion'></img>
-                    </Link>
+                    </a>
+                    {/* </Link> */}
                 </div>
 
 

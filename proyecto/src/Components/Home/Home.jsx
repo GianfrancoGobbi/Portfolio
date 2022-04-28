@@ -69,10 +69,10 @@ export function Home() {
             </div>
 
             <h3 className="description">Mi nombre es Gianfranco Gobbi, nací en Argentina.
-                Soy diseñador gráfico senior y Full Stack developer junior graduado
-                en Henry bootcamp. Actualmente me desarrollo en la sistematización de ventas en línea.
+                Soy diseñador gráfico senior y estudiante Full Stack developer en Henry bootcamp.
+                 Actualmente me desarrollo en la sistematización de ventas en línea.
                 Me gusta el trabajo en equipo, autodidacta
-                y siempre en busca de nuevos desafios para enfrentar.
+                y siempre en busca de nuevos desafios.
                 <br />
                 Mis hobbies son los deportes, la comida y los videojuegos.
             </h3>

@@ -83,12 +83,14 @@ export function Fullstack() {
                 <br></br>
                 Para mostrarte mis habilidades,
                 <br></br>
-                agrega tu ciudad favorita <br></br> y luego cambiaremos el estilo de la tarjeta.
+                agrega tu ciudad favorita <br></br>
+              la cual tendrá su clima actual <br></br> 
+               luego cambia el estilo de la pagina.
 
             </h3>
             <Search onSearch={onSearch} />
             <div className="estilostarjetas">
-                <button id='boton_estilo_ml' className="boton_estilo_ml" onClick={configurarMl}>Mercado Libre</button>
+                <button id='boton_estilo_ml' className="boton_estilo_ml" onClick={configurarMl}>Estilo Mercado Libre</button>
                 {/* <button id='spotify' className="estilos">spotify</button>
                 <button id='facebook' className="estilos">facebook</button>
                 <button id='youtube' className="estilos">youtube</button> */}

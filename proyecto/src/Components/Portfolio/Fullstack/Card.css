@@ -231,8 +231,9 @@ justify-content: center;
     flex-direction:column;
     justify-content:center; 
     align-items:center;
-    padding-bottom: 150px;
-
+    padding-bottom: 260px;
+    height: 100%;
+    margin-bottom: -50px;
 }
 
 .description1ml{
