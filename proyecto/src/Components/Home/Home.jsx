@@ -63,20 +63,21 @@ export function Home() {
             </div>
 
             <Nav />
-            <div className="contenedor_imagenes">
-                <img src={Gian} className="imgGian" alt="Gian" />
-                <img src={FondoGiant} className="imgFondo" alt="Fondo" />
+            <div className="contenedor_imagen_description">
+                <div className="contenedor_imagenes">
+                    <img src={Gian} className="imgGian" alt="Gian" />
+                    <img src={FondoGiant} className="imgFondo" alt="Fondo" />
+                </div>
+
+                <h3 className="description">Mi nombre es Gianfranco Gobbi, nací en Argentina.
+                    Soy diseñador gráfico senior y estudiante Full Stack developer en Henry bootcamp.
+                    Actualmente me desarrollo en la sistematización de ventas en línea.
+                    Me gusta el trabajo en equipo, autodidacta
+                    y siempre en busca de nuevos desafios.
+                    <br />
+                    Mis hobbies son los deportes, la comida y los videojuegos.
+                </h3>
             </div>
-
-            <h3 className="description">Mi nombre es Gianfranco Gobbi, nací en Argentina.
-                Soy diseñador gráfico senior y estudiante Full Stack developer en Henry bootcamp.
-                 Actualmente me desarrollo en la sistematización de ventas en línea.
-                Me gusta el trabajo en equipo, autodidacta
-                y siempre en busca de nuevos desafios.
-                <br />
-                Mis hobbies son los deportes, la comida y los videojuegos.
-            </h3>
-
             {/* <img className='imgprueba' src={'https://www.xtrafondos.com/wallpapers/resoluciones/19/explosion-polvo-y-humo-de-colores_3840x2160_3008.jpg'} alt='Explosion'></img> */}
 
             <Parallax blur={10} bgImage={explote1} bgImageAlt="the cat" strength={1000}>

@@ -54,7 +54,7 @@
 .contenedor_redes {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     width: 100%;

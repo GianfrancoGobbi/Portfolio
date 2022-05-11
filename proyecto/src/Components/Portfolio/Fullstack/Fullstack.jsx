@@ -63,14 +63,40 @@ export function Fullstack() {
         document.getElementById("img").className = "imgml";
         document.getElementById("fullstack_fullstack").className = "fullstack_fullstackml";
         document.getElementById("description1").className = "description1ml";
-      
-        document.getElementById("nav").className ="navml"
-        document.getElementById("nav_h2").className ="nav_h2ml"
-        document.getElementById("nav_contacto").className ="nav_contactoml"
-        document.getElementById("nav_portfolio").className ="nav_portfolioml"
-        document.getElementById("profesion").className ="profesionml"
-        document.getElementById("contenedor_titulo").className ="contenedor_tituloml"
-        document.getElementById("botonagregar").className ="botonagregarml"
+
+        document.getElementById("nav").className = "navml"
+        document.getElementById("nav_h2").className = "nav_h2ml"
+        document.getElementById("nav_contacto").className = "nav_contactoml"
+        document.getElementById("nav_portfolio").className = "nav_portfolioml"
+        document.getElementById("profesion").className = "profesionml"
+        document.getElementById("contenedor_titulo").className = "contenedor_tituloml"
+        document.getElementById("botonagregar").className = "botonagregarml"
+    }
+
+    function configuraryt() {
+        document.getElementById("p").className = "pyt";
+        document.getElementById("h1card").className = "h1cardyt";
+        document.getElementById("card").className = "cardyt";
+        document.getElementById("row").className = "rowyt";
+        document.getElementById("card-body").className = "card-bodyyt";
+        document.getElementById("row").className = "rowyt";
+        document.getElementById("col-sm-4").className = "col-sm-4yt";
+        document.getElementById("col-sm-41").className = "col-sm-4yt";
+        document.getElementById("p1").className = "p1yt";
+        document.getElementById("p2").className = "pyt";
+        document.getElementById("p3").className = "p1yt";
+        document.getElementById("botoncerrar").className = "botoncerraryt";
+        document.getElementById("img").className = "imgyt";
+        document.getElementById("fullstack_fullstack").className = "fullstack_fullstackyt";
+        document.getElementById("description1").className = "description1yt";
+    
+        document.getElementById("nav").className = "navyt"
+        document.getElementById("nav_h2").className = "nav_h2yt"
+        document.getElementById("nav_contacto").className = "nav_contactoyt"
+        document.getElementById("nav_portfolio").className = "nav_portfolioyt"
+        document.getElementById("profesion").className = "profesionyt"
+        document.getElementById("contenedor_titulo").className = "contenedor_tituloyt"
+        document.getElementById("botonagregar").className = "botonagregaryt"
     }
 
     return (
@@ -84,16 +110,14 @@ export function Fullstack() {
                 Para mostrarte mis habilidades,
                 <br></br>
                 agrega tu ciudad favorita <br></br>
-              la cual tendrá su clima actual <br></br> 
-               luego cambia el estilo de la pagina.
+                la cual tendrá su clima actual <br></br>
+                luego cambia el estilo de la pagina.
 
             </h3>
             <Search onSearch={onSearch} />
             <div className="estilostarjetas">
                 <button id='boton_estilo_ml' className="boton_estilo_ml" onClick={configurarMl}>Estilo Mercado Libre</button>
-                {/* <button id='spotify' className="estilos">spotify</button>
-                <button id='facebook' className="estilos">facebook</button>
-                <button id='youtube' className="estilos">youtube</button> */}
+                <button id='boton_estilo_yt' className="boton_estilo_yt" onClick={configuraryt}>Estilo YouTube</button>
             </div>
             <Cards cities={cities} onClose={onClose} />
 

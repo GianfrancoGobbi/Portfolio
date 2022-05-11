@@ -37,6 +37,7 @@
     box-shadow: none;
     text-decoration: underline;
     text-decoration-color: rgb(0, 0, 0);
+    margin-right: 260px;
 }
 
 .nav_portfolio {
@@ -72,6 +73,7 @@
     color: white;
     text-decoration: underline;
     text-decoration-color: rgb(0, 0, 0);
+    margin-left: 260px;
 
 }
 
@@ -83,5 +85,20 @@
 
         padding-top: 5px;
     }
+    .nav_contacto {
+        margin-right: 0px;
+    }
+   .contenedor_titulo {
+        margin-left: 0px;
+    }
+}
 
+@media screen and (max-width: 900px) {
+ 
+    .nav_contacto {
+        margin-right: 0px;
+    }
+   .contenedor_titulo {
+        margin-left: 0px;
+    }
 }
