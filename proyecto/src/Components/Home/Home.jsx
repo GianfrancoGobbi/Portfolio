@@ -15,17 +15,18 @@ import explote1 from '../Home/explote1.jpg'
 export function Home() {
 
     const data = [
-        { value: 'jQuery', count: 15 },
-        { value: 'Illustrator', count: 18 },
-        { value: 'JavaScript', count: 38 },
-        { value: 'REACT', count: 38 },
-        { value: 'Nodejs', count: 16 },
-        { value: 'Photoshop', count: 25 },
-        { value: 'HTML5', count: 33 },
-        { value: 'CSS', count: 38 },
-        { value: '3D max', count: 22 },
-        { value: 'APPsheet', count: 7 },
-        { value: 'Premiere', count: 13 },
+        { value: 'jQuery', count: 17 },
+        { value: 'Illustrator', count: 20 },
+        { value: 'JavaScript', count: 40 },
+        { value: 'REACT', count: 40 },
+        { value: 'Nodejs', count: 18 },
+        { value: 'Express', count: 18},
+        { value: 'Photoshop', count: 27 },
+        { value: 'HTML5', count: 35},
+        { value: 'CSS', count: 40 },
+        { value: '3D max', count: 24 },
+        { value: 'APPsheet', count: 9},
+        { value: 'Premiere', count: 15 },
     ]
 
     const customRenderer = (tag, size, color) => (

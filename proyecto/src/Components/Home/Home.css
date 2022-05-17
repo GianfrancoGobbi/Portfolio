@@ -174,15 +174,16 @@
     display: flex;
     position: relative;
     bottom: 90px;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
+    color: rgba(255, 255, 255, 0.842);
+    font-family: 'Montserrat', sans-serif;
     text-shadow: 2px 2px 4px #00000000;
     font-size: 22px;
     line-height: 35px;
+    font-weight: 100;
     text-align: center;
     justify-content: center;
   
-    margin: auto;
+    margin-top: 85px;
     margin-bottom: 0px;
     margin-left: 10px;
     margin-right: 10px;
