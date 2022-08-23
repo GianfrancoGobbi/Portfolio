@@ -70,11 +70,12 @@ export function Home() {
                     <img src={FondoGiant} className="imgFondo" alt="Fondo" />
                 </div>
 
-                <h3 className="description">Mi nombre es Gianfranco Gobbi, nací en Argentina.
-                    Soy diseñador gráfico senior y estudiante Full Stack developer en Henry bootcamp.
-                    Actualmente me desarrollo en la sistematización de ventas en línea.
-                    Me gusta el trabajo en equipo, autodidacta
-                    y siempre en busca de nuevos desafios.
+                <h3 className="description">Full Stack Developer con formación como Diseñador Gráfico.
+Experiencia trabajando con React, Redux, NodeJS, Postgres, etc.
+Diseñé una App para logística y distribución comercial, basada
+en estrategias de venta, con apoyo en bases de datos.
+Actualmente trabajo en Henry como asistente de enseñanza
+Full-Stack liderando la integración del grupo
                     <br />
                     Mis hobbies son los deportes, la comida y los videojuegos.
                 </h3>
