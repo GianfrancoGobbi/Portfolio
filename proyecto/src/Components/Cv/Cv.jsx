@@ -6,10 +6,7 @@ import imgcv from '../Cv/CV.jpg'
 export function Cv() {
     return (
         <div>
-            <Nav />
             <div className="Cv">
-
-
                 <object
                     data={require('../Cv/CV.pdf')}
                     type="application/pdf"
@@ -25,7 +22,6 @@ export function Cv() {
                         </img>
                     </a>
                 </object>
-
             </div>
         </div>
     )
