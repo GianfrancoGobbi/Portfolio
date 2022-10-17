@@ -1,6 +1,5 @@
 import React from 'react';
 import './Cv.css';
-import Nav from '../Nav/Nav.jsx';
 import imgcv from '../Cv/CV.jpg'
 
 export function Cv() {
