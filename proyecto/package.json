@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@mui/material": "^5.6.2",
+    "@splinetool/react-spline": "^2.2.3",
+    "@splinetool/runtime": "^0.9.123",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
