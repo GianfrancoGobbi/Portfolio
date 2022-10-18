@@ -6,7 +6,8 @@
 }
 
 .loader {
-        margin: auto;
+    position: absolute;
+        margin-left: 47%;
         margin-top: 300px;
     width: 48px;
     height: 48px;
