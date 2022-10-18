@@ -1,4 +1,4 @@
-import { React } from 'react';
+import { React, useState,useEffect } from 'react';
 import './Home.css'
 // import Nav from '../Nav/Nav.jsx';
 // import Gian from '../Home/Gian.png'
@@ -123,9 +123,15 @@ export function Home() {
 
     //         </div>
     //     )
+    const [loader, setLoader] = useState(true)
+    useEffect(() => {
+        setTimeout(() => { setLoader(false) },
+            3000)
+    }, [])
 
     return (
         <div className='home'>
+            {loader && <span className="loader"></span>}
             <Spline scene="https://prod.spline.design/7YwD9fkltWMgRXUu/scene.splinecode" />
         </div>
     );

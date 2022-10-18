@@ -5,6 +5,41 @@
     text-shadow: 2px 2px 4px #000000;
 }
 
+.loader {
+    margin: auto;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    animation : rotate 2s linear infinite;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+  }
+  .loader:before,
+  .loader:after {
+    content:"G";
+    flex:1;
+    background:rgba(255, 255, 255, 0);
+    animation: mvx 0.5s infinite linear alternate;
+  }
+  .loader:before {
+    background: #ff3c0000;
+    animation-name:mvrx;
+  }
+
+  @keyframes rotate {
+    100% {transform: rotate(360deg)}
+  }
+  @keyframes mvx {
+    0% , 40% {transform: translateX(-5px)}
+    20% , 60% {transform: translateX(8px)}
+    100% {transform: translateX(15px)}
+  }
+  @keyframes mvrx {
+    0% , 40% {transform: translateX(5px)}
+    20% , 60% {transform: translateX(-8px)}
+    100% {transform: translateX(-15px)}
+  }
+
 .h2 {
     text-align: center;
     font-Family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -17,6 +52,10 @@
 .home{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .h2t {
