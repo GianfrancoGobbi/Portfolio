@@ -10,7 +10,7 @@ import './Home.css'
 // import { Link } from 'react-router-dom';
 // import { TagCloud } from 'react-tagcloud'
 // import explote1 from '../Home/explote1.jpg'
-import Spline from '@splinetool/react-spline';
+// import Spline from '@splinetool/react-spline';
 
 export function Home() {
 
