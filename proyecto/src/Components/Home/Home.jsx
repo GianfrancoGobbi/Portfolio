@@ -132,7 +132,7 @@ export function Home() {
     return (
         <div className='home'>
             {loader && <span className="loader"></span>}
-            <Spline scene="https://prod.spline.design/7YwD9fkltWMgRXUu/scene.splinecode" />
+            <Spline scene="https://prod.spline.design/MI2cp74rgIcQHatq/scene.splinecode" />
         </div>
     );
 }
