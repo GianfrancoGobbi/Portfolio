@@ -130,16 +130,17 @@ export function Home() {
     }, [])
 
     return (
-        <div className='home'>
-            {loader && <span className="loader"></span>}
-             <iframe 
+           <div className='home'>
+        {loader && <span className="loader"></span>}
+        <iframe 
             src='https://my.spline.design/untitled-4fc8777f8656224d3de77260eacc311e/' 
             frameBorder='0' 
             width='100%' 
             height='100%'
+            title='Interactive 3D Design'
         ></iframe>
-            //<Spline scene="https://prod.spline.design/MI2cp74rgIcQHatq/scene.splinecode" />
-        </div>
+        {/* <Spline scene="https://prod.spline.design/MI2cp74rgIcQHatq/scene.splinecode" /> */}
+    </div>
         
     );
 }
